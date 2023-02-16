@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="56bb8a01-8faf-4f0d-b604-1c1eb018e298" name="sdf">
+        <fileTransfer accessType="SFTP" host="sdf.slac.stanford.edu" port="22" sshConfigId="bcc65b41-73cd-43fb-8af8-6f2e37b36785" sshConfig="axlevy@sdf.slac.stanford.edu:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="c1a00f09-83ab-40fb-bec9-4aef06a1a3a8" name="zeus">
+        <fileTransfer accessType="SFTP" host="zeus" port="22" sshConfigId="618d4ba6-35a6-47eb-a327-b3f32092db13" sshConfig="axlevy@zeus:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
