@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="SshConfigs">
-    <configs>
-      <sshConfig authType="PASSWORD" host="sdf.slac.stanford.edu" id="bcc65b41-73cd-43fb-8af8-6f2e37b36785" port="22" nameFormat="DESCRIPTIVE" username="axlevy" />
-      <sshConfig authType="PASSWORD" host="zeus" id="618d4ba6-35a6-47eb-a327-b3f32092db13" port="22" nameFormat="DESCRIPTIVE" username="axlevy" />
-    </configs>
-  </component>
-</project>
