@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="CryoFIRE">
+    <meta name="author" content="Axel Levy, Ellen D. Zhong">
+
+    <title>CryoFIRE</title>
+    <!-- Bootstrap core CSS -->
+    <!--link href="bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/offcanvas.css" rel="stylesheet">
+    <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+</head>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container"></div>
+    <h2>CryoFIRE<br>Amortized Inference for Heterogeneous Reconstruction in Cryo-EM</h2>
+    <h3>NeurIPS 2022</h3>
+<!--            <p class="abstract">An interpretable, data-efficient, and scalable neural scene representation.</p>-->
+    <hr>
+    <p class="authors">
+        <a href="https://axlevy.com/" style="color: #c800ff"> Axel Levy</a>,
+        <a href="https://stanford.edu/~gordonwz/" style="color: #c800ff"> Gordon Wetzstein</a>,
+        <a href="http://www.jmartel.net" style="color: #c800ff"> Julien Martel</a>,
+        <a href="https://scholar.google.fr/citations?user=qz6POUsAAAAJ&hl=fr" style="color: #c800ff"> Frederic Poitevin</a>,
+        <a href="https://www.cs.princeton.edu/~zhonge/" style="color: #c800ff"> Ellen D. Zhong</a>
+    </p>
+    <div class="btn-group" role="group" aria-label="Top menu">
+        <a class="btn btn-primary" href="https://arxiv.org/abs/2210.07387" style="border-color: #c800ff;background-color: #c800ff">Paper</a>
+<!--        <a class="btn btn-primary" href="https://">Code</a>-->
+    </div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <div class="vcontainer">
+            <iframe class='video' src="./cryoFIRE_NeurIPS.mp4" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+        <hr>
+        <p>
+            Cryo-electron microscopy (cryo-EM) is an imaging modality that provides unique insights into the dynamics
+            of proteins and other building blocks of life.
+
+            The algorithmic challenge of jointly estimating the poses, 3D structure, and conformational heterogeneity
+            of a biomolecule from millions of noisy and randomly oriented 2D projections in a computationally efficient
+            manner, however, remains unsolved.
+
+            Our method, cryoFIRE, performs ab initio heterogeneous reconstruction with unknown poses in an amortized
+            framework, thereby avoiding the computationally expensive step of pose search while enabling the analysis
+            of conformational heterogeneity.
+
+            Poses and conformation are jointly estimated by an encoder while a physics-based decoder aggregates the
+            images into an implicit neural representation of the conformational space.
+
+            We show that our method can provide one order of magnitude speedup on datasets containing millions of
+            images without any loss of accuracy.
+
+            We validate that the joint estimation of poses and conformations can be amortized over the size of the
+            dataset.
+
+            For the first time, we prove that an amortized method can extract interpretable dynamic information from
+            experimental datasets.
+        </p>
+    </div>
+
+  <div class="section">
+        <h2>Related Projects</h2>
+        <hr>
+        <div class='row vspace-top'>
+            <div class="col-sm-3">
+                <img src='img/cryodrgn2_logo.png' class='img-fluid'>
+            </div>
+
+            <div class="col">
+                <div class='paper-title'>
+                    <a href="https://openaccess.thecvf.com/content/ICCV2021/html/Zhong_CryoDRGN2_Ab_Initio_Neural_Reconstruction_of_3D_Protein_Structures_From_ICCV_2021_paper.html" style="color: #c800ff">CryoDRGN2: Ab Initio Neural Reconstruction of 3D Protein Structures From Real Cryo-EM Images</a>
+                </div>
+                <div>
+                    We describe cryoDRGN2, an ab initio reconstruction algorithm, which can jointly estimate image
+                    poses and learn a neural model of a distribution of 3D structures on real heterogeneous cryo-EM data.
+                </div>
+            </div>
+        </div>
+
+        <div class='row vspace-top'>
+            <div class="col-sm-3">
+                <img src='img/logo_cryoai.gif' class='img-fluid'>
+            </div>
+
+            <div class="col">
+                <div class='paper-title'>
+                    <a href="https://arxiv.org/abs/2203.08138" style="color: #c800ff">CryoAI: Amortized Inference of Poses for Ab Initio Reconstruction of 3D Molecular Volumes from Real Cryo-EM Images</a>
+
+                </div>
+                <div>
+                    We introduce cryoAI, an ab initio reconstruction algorithm for homogeneous conformations that uses
+                    direct gradient-based optimization of particle poses and the electron scattering potential from single-particle cryo-EM data.
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    <div class="section">
+        <h2>Paper</h2>
+        <hr>
+        <div>
+            <div class="list-group">
+                <a href="https://arxiv.org/abs/2210.07387"
+                   class="list-group-item">
+                    <img src="img/paper_thumbnail.png" style="width:100%; margin-right:-20px; margin-top:-10px;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Bibtex</h2>
+        <hr>
+        <div class="bibtexsection">
+            @inproceedings{levy2022cryofire,
+                author = {Levy, Axel,
+                          Wetzstein, Gordon,
+                          Martel, Julien,
+                          Poitevin, Frederic,
+                          and Zhong, Ellen D.},
+                title = {Amoritized Inference for Heterogeneous
+                          Reconstruction in Cryo-EM},
+                booktitle = {Proc. NeurIPS},
+                year={2022}
+            }
+        </div>
+    </div>
+
+    <hr>
+</div>
+
+</body>
+</html>

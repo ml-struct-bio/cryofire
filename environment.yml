@@ -1,26 +1,22 @@
 name: cryofire
 
 channels:
-  - pytorch
-  - conda-forge
-  - anaconda
-  - jmcmurray
-  - travis
+  - defaults
 
 dependencies:
   - python=3.7.10
-  - pip
-  - pytorch=1.9.0
-  - torchvision=0.10.0
-  - torchaudio=0.9.0
-  - cudatoolkit=11.3
-  - matplotlib
-  - json
-  - regex
-  - seaborn
-  - scipy
-  - scikit-learn
-  - tensorboard=2.5.0
-  - jupyter
+  - anaconda::pip
+  - pytorch::pytorch=1.9.0
+  - pytorch::torchvision=0.10.0
+  - pytorch::torchaudio=0.9.0
+  - anaconda::cudatoolkit=11.3
+  - conda-forge::matplotlib
+  - jmcmurray::json
+  - conda-forge::regex
+  - anaconda::seaborn
+  - anaconda::scipy
+  - anaconda::scikit-learn
+  - conda-forge::tensorboard=2.5.0
+  - anaconda::jupyter
   - pip:
       - setuptools==59.5.0
