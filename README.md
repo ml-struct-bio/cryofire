@@ -72,6 +72,9 @@ tensorboard --logdir path_to_log_directory --port XXXX --bind_all
 You can generate volumes from a CryoFIRE model and a set of conformation variables using `src/commands/generate_volumes.py`.
 See `notebooks/template.ipynb` for a template.
 
+![](imgs/10028.gif)
+![](imgs/10180.gif)
+
 ## Parameters
 
 ```
