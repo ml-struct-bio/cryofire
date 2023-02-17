@@ -73,7 +73,6 @@ You can generate volumes from a CryoFIRE model and a set of conformation variabl
 See `notebooks/template.ipynb` for a template.
 
 ![](imgs/10028.gif)
-![](imgs/10180.gif)
 
 ## Parameters
 
