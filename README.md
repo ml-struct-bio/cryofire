@@ -19,6 +19,10 @@ conda env create -f environment.yml
 conda activate cryofire
 ```
 
+## Note for Users
+
+This public repository is mainly addressed to method developpers. We still recommend users willing to perform ab initio heterogeneous reconstruction to use the [cryoDRGN](https://github.com/zhonge/cryodrgn) software. Contrary to cryoFIRE, cryoDRGN use pose search to estimate poses. We are actively working on releasing a user-oriented version of cryoFIRE.  
+
 ## Quickstart
 
 ### 1. Preprocessing image stack
