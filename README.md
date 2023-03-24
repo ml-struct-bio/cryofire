@@ -1,6 +1,6 @@
 # :snowflake::fire: Amortized Inference for Heterogeneous Reconstruction in Cryo-EM (CryoFIRE)
 
-CryoFIRE (Fast heterogeneous ab Initio Reconstruction for cryo-EM), performs ab initio heterogeneous reconstruction with unknown poses in an amortized framework.
+CryoFIRE (Fast heterogeneous ab Initio Reconstruction for cryo-EM), performs _ab initio_ heterogeneous reconstruction with unknown poses in an amortized framework.
 Poses and conformation are jointly estimated by an encoder while a physics-based decoder aggregates the images into an implicit neural representation of the conformational space.
 
 ![](imgs/pipeline.png)
@@ -21,7 +21,7 @@ conda activate cryofire
 
 ## Note for Users
 
-This public repository is mainly addressed to method developpers. We still recommend users willing to perform ab initio heterogeneous reconstruction to use the [cryoDRGN](https://github.com/zhonge/cryodrgn) software. Contrary to cryoFIRE, cryoDRGN use pose search to estimate poses. We are actively working on releasing a user-oriented version of cryoFIRE.  
+This repository is mainly addressed to method developers. We still recommend users interested in _ab initio_ heterogeneous reconstruction to use the [cryoDRGN](https://github.com/zhonge/cryodrgn) software. Contrary to cryoFIRE, cryoDRGN uses pose search to estimate poses. We are actively working on releasing a user-oriented version of cryoFIRE.
 
 ## Quickstart
 
