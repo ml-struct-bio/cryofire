@@ -5,6 +5,8 @@ Poses and conformation are jointly estimated by an encoder while a physics-based
 
 ![](imgs/pipeline.png)
 
+See our project page for more information: [https://cryofire.cs.princeton.edu/](https://cryofire.cs.princeton.edu/)
+
 ## Manuscript:
 
 [Amortized Inference for Heterogeneous Reconstruction in Cryo-EM](https://arxiv.org/abs/2210.07387) \
@@ -21,7 +23,7 @@ conda activate cryofire
 
 ## Note for Users
 
-This repository is mainly addressed to method developers. We still recommend users interested in _ab initio_ heterogeneous reconstruction to use the [cryoDRGN](https://github.com/zhonge/cryodrgn) software. Contrary to cryoFIRE, cryoDRGN uses pose search to estimate poses. We are actively working on releasing a user-oriented version of cryoFIRE.
+This repository is mainly addressed to method developers. We still recommend users interested in _ab initio_ heterogeneous reconstruction to use the [cryoDRGN](https://github.com/zhonge/cryodrgn) software. Unlike cryoFIRE, cryoDRGN uses pose search to estimate poses. We are actively working on releasing a user-oriented version of cryoFIRE.
 
 ## Quickstart
 
